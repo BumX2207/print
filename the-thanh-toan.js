@@ -1,12 +1,17 @@
-{
-    id: 'tk-qr',
-    name: '💳 Tem Thanh Toán (GitHub)',
-    bg: 'https://admintnb.com/wp-content/uploads/2026/01/Tet-1.png', 
-    width: 700, 
-    height: 500,
-    inputs: [
-        { label: 'Bank', x: 50, y: 50, w: 600, size: 24, color: '#2ecc71', bold: true, val: 'VIETCOMBANK' },
-        { label: 'STK', x: 50, y: 100, w: 600, size: 40, color: '#000', bold: true, val: '9999.8888.6666' },
-        { label: 'Tên', x: 50, y: 160, w: 600, size: 24, color: '#333', val: 'NGUYEN VAN A' }
-    ]
-}
+<div id="template-setup" 
+     data-id="tk-qr" 
+     data-name="💳 Tem Thanh Toán" 
+     data-bg="https://admintnb.com/wp-content/uploads/2026/01/Tet-1.png" 
+     data-width="700" 
+     data-height="500">
+
+     <!-- CÁC DÒNG CHỮ (INPUT) TRÊN TEM -->
+     <!-- Lưu ý: Phải có class "pr-input-div" và thuộc tính data-sync="tên_bất_kỳ" để đồng bộ khi in nhiều tem -->
+     
+     <div class="pr-input-div" data-sync="bank" style="left: 50px; top: 50px; width: 600px; font-size: 24px; color: #2ecc71; font-weight: bold; justify-content: left;">VIETCOMBANK</div>
+     
+     <div class="pr-input-div" data-sync="stk" style="left: 50px; top: 100px; width: 600px; font-size: 40px; color: #000; font-weight: bold; justify-content: left;">9999.8888.6666</div>
+     
+     <div class="pr-input-div" data-sync="name" style="left: 50px; top: 160px; width: 600px; font-size: 24px; color: #333; justify-content: left;">NGUYEN VAN A</div>
+
+</div>
