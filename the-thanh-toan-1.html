@@ -1,15 +1,15 @@
 <div id="template-setup" data-name="💳 Tem Thanh Toán" data-bg="https://admintnb.com/wp-content/uploads/2026/01/Tet-1.png">
 
-    <!-- KHUNG LƯỚI CHIA 4 Ô ĐỀU NHAU -->
-    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; width: 100%; height: 100%; gap: 10px;">
+    <!-- KHUNG CHỨA 1 Ô: Chiếm 100% tờ giấy A4 -->
+    <div style="width: 100%; height: 100%; position: relative;">
         
-        <!-- Ô SỐ 1 -->
-        <div style="position: relative; border: 1px dashed #ccc;">
-            <img src="https://admintnb.com/wp-content/uploads/2026/01/Tet-1.png" style="width: 100%; height: 100%; object-fit: contain;">
-            <div class="pr-input-div" style="left: 10%; top: 20%; font-size: 20px;">Tên ô 1</div>
-        </div>
+        <!-- HÌNH ẢNH: object-fit: contain giúp ảnh fit khít màn hình và KHÔNG BỊ MÉO -->
+        <img src="https://admintnb.com/wp-content/uploads/2026/01/Tet-1.png" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+        
+        <!-- CÁC Ô NHẬP CHỮ (Căn tọa độ left, top theo ý bạn) -->
+        <div class="pr-input-div" style="left: 15%; top: 25%; font-size: 35px; font-weight: bold; color: #d63031;">Tên Người Nhận</div>
+        <div class="pr-input-div" style="left: 15%; top: 35%; font-size: 50px; font-weight: bold;">9999.8888.6666</div>
 
-        
     </div>
 
 </div>
